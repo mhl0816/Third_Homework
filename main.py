@@ -26,13 +26,14 @@ print(index2)
 
 
 mean = df1["Close"].mean()
+mean2 = df2["Close"].mean()
 
 
 plt.figure("Mcdonald's and Wendy's Stock")
 plt.plot(df1["Date"], df1["Close"], 'r-', linewidth=0.6, label="MCD Stock price, mean="+str(mean), data=df1)
 # or the same can be:
 # plt.plot("Date", "Close", 'r-', linewidth=0.6, label="APPL Stock price, mean="+str(mean), data=df1)
-plt.plot(df2["Date"], df2["Close"], 'r-', linewidth=0.6, label="WED Stock price, mean="+str(mean), data=df2)
+plt.plot(df2["Date"], df2["Close"], 'r-', linewidth=0.6, label="WED Stock price, mean="+str(mean2), data=df2)
 plt.xlabel("Dates")
 plt.legend(loc="upper left")
 
